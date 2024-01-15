@@ -1,4 +1,4 @@
-# Alkaliphilic
+# Alkaliphilic Protein Classification
 
 ## Dataset
 The dataset used in this study was obtained from the NCBI database. The protein sequences containing ambiguous residues, such as “X”, “B”, and “Z”, and the sequences, which are fragments of other proteins (protein length < 100) were excluded. To ensure non-redundancy between the two sets, redundancy reduction was performed using the MMSeqs2-UniqueProt algorithm. This algorithm reduced the sequence identity within the test set and between the training and test sets to 20% without further redundancy reduction within the training set. The final dataset consisted of 1,002 alkaliphilic and 1,866 non-alkaliphilic proteins. The dataset was then divided into a training set and a test set in an 80:20 ratio. It is located on alkaliSplitNoFragment.csv file. The file consist of identifier, sequence, label, and set columns. Identifier column is the accession number of protein sequence. 
